@@ -75,6 +75,9 @@
     <EmbeddedResource Include="frmAcuerdo.resx">
       <DependentUpon>frmAcuerdo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPrecios.resx">
+      <DependentUpon>frmPrecios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
