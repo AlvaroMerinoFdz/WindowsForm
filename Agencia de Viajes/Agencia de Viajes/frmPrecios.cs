@@ -75,6 +75,7 @@ namespace Agencia_de_Viajes
 
         }
 
+        /*
         private void numeroValido(int numero, TextBox txt)
         {
             Boolean valido = int.TryParse(txt.Text, out num);
@@ -98,12 +99,7 @@ namespace Agencia_de_Viajes
 
                 txt.Text = num.ToString();
             }
-        }
-
-        private void txtCiudad_TextChanged(object sender, EventArgs e)
-        {
-            numeroValido(destinos[0], txtCiudad);
-            destinos[0] = int.Parse(txtCiudad.Text);
-        }
+        }*/
     }
+        
 }

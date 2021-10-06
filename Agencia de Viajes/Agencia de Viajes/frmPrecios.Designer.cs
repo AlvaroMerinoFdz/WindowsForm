@@ -35,54 +35,54 @@ namespace Agencia_de_Viajes
             this.tcPrecios = new System.Windows.Forms.TabControl();
             this.tpDestinos = new System.Windows.Forms.TabPage();
             this.grbEstancia = new System.Windows.Forms.GroupBox();
-            this.txtCompleta = new System.Windows.Forms.TextBox();
-            this.txtMedia = new System.Windows.Forms.TextBox();
-            this.txtDormir = new System.Windows.Forms.TextBox();
             this.lblCompleta = new System.Windows.Forms.Label();
             this.lblMedia = new System.Windows.Forms.Label();
             this.lblDormir = new System.Windows.Forms.Label();
-            this.txtPersona = new System.Windows.Forms.TextBox();
             this.lblPersona = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtCincoEstrella = new System.Windows.Forms.TextBox();
-            this.txtCuatroEstrella = new System.Windows.Forms.TextBox();
-            this.txtTresEstrella = new System.Windows.Forms.TextBox();
             this.pcbCincoEstrella = new System.Windows.Forms.PictureBox();
-            this.txtDosEstrella = new System.Windows.Forms.TextBox();
             this.pcbCuatroEstrella = new System.Windows.Forms.PictureBox();
-            this.txtUnaEstrella = new System.Windows.Forms.TextBox();
             this.pcbTresEstrella = new System.Windows.Forms.PictureBox();
             this.pcbDosEstrella = new System.Windows.Forms.PictureBox();
             this.pcbUnaEstrella = new System.Windows.Forms.PictureBox();
             this.grbDestinos = new System.Windows.Forms.GroupBox();
-            this.txtTour = new System.Windows.Forms.TextBox();
-            this.txtMontain = new System.Windows.Forms.TextBox();
-            this.txtPlaya = new System.Windows.Forms.TextBox();
-            this.txtCiudad = new System.Windows.Forms.TextBox();
             this.lblTour = new System.Windows.Forms.Label();
             this.lblMontain = new System.Windows.Forms.Label();
             this.lblPlaya = new System.Windows.Forms.Label();
             this.lblCiudad = new System.Windows.Forms.Label();
             this.tpActividades = new System.Windows.Forms.TabPage();
             this.grbActividades = new System.Windows.Forms.GroupBox();
-            this.txtSpa = new System.Windows.Forms.TextBox();
-            this.txtNaturAventura = new System.Windows.Forms.TextBox();
-            this.txtLavanderia = new System.Windows.Forms.TextBox();
-            this.txtExcursion = new System.Windows.Forms.TextBox();
             this.lblSpa = new System.Windows.Forms.Label();
             this.lblNaturAventura = new System.Windows.Forms.Label();
             this.lblLavanderia = new System.Windows.Forms.Label();
             this.lblExcursion = new System.Windows.Forms.Label();
-            this.txtCena = new System.Windows.Forms.TextBox();
             this.lblCena = new System.Windows.Forms.Label();
             this.tpFechas = new System.Windows.Forms.TabPage();
             this.grbFechas = new System.Windows.Forms.GroupBox();
-            this.txtBaja = new System.Windows.Forms.TextBox();
-            this.txtMediaTem = new System.Windows.Forms.TextBox();
-            this.txtAlta = new System.Windows.Forms.TextBox();
             this.lblBaja = new System.Windows.Forms.Label();
             this.lblMediaTem = new System.Windows.Forms.Label();
             this.lblAlta = new System.Windows.Forms.Label();
+            this.txtCiudad = new System.Windows.Forms.MaskedTextBox();
+            this.txtPlaya = new System.Windows.Forms.MaskedTextBox();
+            this.txtMontain = new System.Windows.Forms.MaskedTextBox();
+            this.txtTour = new System.Windows.Forms.MaskedTextBox();
+            this.txtDormir = new System.Windows.Forms.MaskedTextBox();
+            this.txtMedia = new System.Windows.Forms.MaskedTextBox();
+            this.txtCompleta = new System.Windows.Forms.MaskedTextBox();
+            this.txtUnaEstrella = new System.Windows.Forms.MaskedTextBox();
+            this.txtDosEstrella = new System.Windows.Forms.MaskedTextBox();
+            this.txtTresEstrella = new System.Windows.Forms.MaskedTextBox();
+            this.txtCuatroEstrella = new System.Windows.Forms.MaskedTextBox();
+            this.txtCincoEstrella = new System.Windows.Forms.MaskedTextBox();
+            this.txtPersona = new System.Windows.Forms.MaskedTextBox();
+            this.txtExcursion = new System.Windows.Forms.MaskedTextBox();
+            this.txtLavanderia = new System.Windows.Forms.MaskedTextBox();
+            this.txtNaturAventura = new System.Windows.Forms.MaskedTextBox();
+            this.txtSpa = new System.Windows.Forms.MaskedTextBox();
+            this.txtCena = new System.Windows.Forms.MaskedTextBox();
+            this.txtAlta = new System.Windows.Forms.MaskedTextBox();
+            this.txtMediaTem = new System.Windows.Forms.MaskedTextBox();
+            this.txtBaja = new System.Windows.Forms.MaskedTextBox();
             this.tsMenu.SuspendLayout();
             this.tcPrecios.SuspendLayout();
             this.tpDestinos.SuspendLayout();
@@ -135,8 +135,8 @@ namespace Agencia_de_Viajes
             // 
             this.tpDestinos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tpDestinos.BackgroundImage")));
             this.tpDestinos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tpDestinos.Controls.Add(this.grbEstancia);
             this.tpDestinos.Controls.Add(this.txtPersona);
+            this.tpDestinos.Controls.Add(this.grbEstancia);
             this.tpDestinos.Controls.Add(this.lblPersona);
             this.tpDestinos.Controls.Add(this.groupBox1);
             this.tpDestinos.Controls.Add(this.grbDestinos);
@@ -163,33 +163,6 @@ namespace Agencia_de_Viajes
             this.grbEstancia.TabIndex = 15;
             this.grbEstancia.TabStop = false;
             this.grbEstancia.Text = "Tipo de estancia";
-            // 
-            // txtCompleta
-            // 
-            this.txtCompleta.Location = new System.Drawing.Point(111, 96);
-            this.txtCompleta.Name = "txtCompleta";
-            this.txtCompleta.Size = new System.Drawing.Size(141, 20);
-            this.txtCompleta.TabIndex = 5;
-            this.txtCompleta.Text = "60";
-            this.txtCompleta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtMedia
-            // 
-            this.txtMedia.Location = new System.Drawing.Point(111, 60);
-            this.txtMedia.Name = "txtMedia";
-            this.txtMedia.Size = new System.Drawing.Size(141, 20);
-            this.txtMedia.TabIndex = 4;
-            this.txtMedia.Text = "30";
-            this.txtMedia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtDormir
-            // 
-            this.txtDormir.Location = new System.Drawing.Point(111, 25);
-            this.txtDormir.Name = "txtDormir";
-            this.txtDormir.Size = new System.Drawing.Size(141, 20);
-            this.txtDormir.TabIndex = 3;
-            this.txtDormir.Text = "20";
-            this.txtDormir.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblCompleta
             // 
@@ -221,21 +194,12 @@ namespace Agencia_de_Viajes
             this.lblDormir.TabIndex = 0;
             this.lblDormir.Text = "Dormir";
             // 
-            // txtPersona
-            // 
-            this.txtPersona.Location = new System.Drawing.Point(567, 320);
-            this.txtPersona.Name = "txtPersona";
-            this.txtPersona.Size = new System.Drawing.Size(98, 20);
-            this.txtPersona.TabIndex = 14;
-            this.txtPersona.Text = "20";
-            this.txtPersona.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lblPersona
             // 
             this.lblPersona.AutoSize = true;
             this.lblPersona.BackColor = System.Drawing.Color.White;
             this.lblPersona.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPersona.Location = new System.Drawing.Point(578, 291);
+            this.lblPersona.Location = new System.Drawing.Point(516, 303);
             this.lblPersona.Name = "lblPersona";
             this.lblPersona.Size = new System.Drawing.Size(75, 13);
             this.lblPersona.TabIndex = 13;
@@ -247,10 +211,10 @@ namespace Agencia_de_Viajes
             this.groupBox1.Controls.Add(this.txtCincoEstrella);
             this.groupBox1.Controls.Add(this.txtCuatroEstrella);
             this.groupBox1.Controls.Add(this.txtTresEstrella);
-            this.groupBox1.Controls.Add(this.pcbCincoEstrella);
             this.groupBox1.Controls.Add(this.txtDosEstrella);
-            this.groupBox1.Controls.Add(this.pcbCuatroEstrella);
             this.groupBox1.Controls.Add(this.txtUnaEstrella);
+            this.groupBox1.Controls.Add(this.pcbCincoEstrella);
+            this.groupBox1.Controls.Add(this.pcbCuatroEstrella);
             this.groupBox1.Controls.Add(this.pcbTresEstrella);
             this.groupBox1.Controls.Add(this.pcbDosEstrella);
             this.groupBox1.Controls.Add(this.pcbUnaEstrella);
@@ -261,33 +225,6 @@ namespace Agencia_de_Viajes
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Estrellas";
             // 
-            // txtCincoEstrella
-            // 
-            this.txtCincoEstrella.Location = new System.Drawing.Point(145, 183);
-            this.txtCincoEstrella.Name = "txtCincoEstrella";
-            this.txtCincoEstrella.Size = new System.Drawing.Size(141, 20);
-            this.txtCincoEstrella.TabIndex = 10;
-            this.txtCincoEstrella.Text = "80";
-            this.txtCincoEstrella.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtCuatroEstrella
-            // 
-            this.txtCuatroEstrella.Location = new System.Drawing.Point(145, 142);
-            this.txtCuatroEstrella.Name = "txtCuatroEstrella";
-            this.txtCuatroEstrella.Size = new System.Drawing.Size(141, 20);
-            this.txtCuatroEstrella.TabIndex = 9;
-            this.txtCuatroEstrella.Text = "60";
-            this.txtCuatroEstrella.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtTresEstrella
-            // 
-            this.txtTresEstrella.Location = new System.Drawing.Point(145, 108);
-            this.txtTresEstrella.Name = "txtTresEstrella";
-            this.txtTresEstrella.Size = new System.Drawing.Size(141, 20);
-            this.txtTresEstrella.TabIndex = 8;
-            this.txtTresEstrella.Text = "40";
-            this.txtTresEstrella.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // pcbCincoEstrella
             // 
             this.pcbCincoEstrella.Image = ((System.Drawing.Image)(resources.GetObject("pcbCincoEstrella.Image")));
@@ -297,15 +234,6 @@ namespace Agencia_de_Viajes
             this.pcbCincoEstrella.TabIndex = 4;
             this.pcbCincoEstrella.TabStop = false;
             // 
-            // txtDosEstrella
-            // 
-            this.txtDosEstrella.Location = new System.Drawing.Point(145, 68);
-            this.txtDosEstrella.Name = "txtDosEstrella";
-            this.txtDosEstrella.Size = new System.Drawing.Size(141, 20);
-            this.txtDosEstrella.TabIndex = 7;
-            this.txtDosEstrella.Text = "30";
-            this.txtDosEstrella.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // pcbCuatroEstrella
             // 
             this.pcbCuatroEstrella.Image = ((System.Drawing.Image)(resources.GetObject("pcbCuatroEstrella.Image")));
@@ -314,15 +242,6 @@ namespace Agencia_de_Viajes
             this.pcbCuatroEstrella.Size = new System.Drawing.Size(121, 22);
             this.pcbCuatroEstrella.TabIndex = 3;
             this.pcbCuatroEstrella.TabStop = false;
-            // 
-            // txtUnaEstrella
-            // 
-            this.txtUnaEstrella.Location = new System.Drawing.Point(145, 28);
-            this.txtUnaEstrella.Name = "txtUnaEstrella";
-            this.txtUnaEstrella.Size = new System.Drawing.Size(141, 20);
-            this.txtUnaEstrella.TabIndex = 6;
-            this.txtUnaEstrella.Text = "20";
-            this.txtUnaEstrella.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // pcbTresEstrella
             // 
@@ -369,43 +288,6 @@ namespace Agencia_de_Viajes
             this.grbDestinos.TabIndex = 2;
             this.grbDestinos.TabStop = false;
             this.grbDestinos.Text = "Destinos";
-            // 
-            // txtTour
-            // 
-            this.txtTour.Location = new System.Drawing.Point(111, 135);
-            this.txtTour.Name = "txtTour";
-            this.txtTour.Size = new System.Drawing.Size(141, 20);
-            this.txtTour.TabIndex = 7;
-            this.txtTour.Text = "500";
-            this.txtTour.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtMontain
-            // 
-            this.txtMontain.Location = new System.Drawing.Point(111, 101);
-            this.txtMontain.Name = "txtMontain";
-            this.txtMontain.Size = new System.Drawing.Size(141, 20);
-            this.txtMontain.TabIndex = 6;
-            this.txtMontain.Text = "400";
-            this.txtMontain.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtPlaya
-            // 
-            this.txtPlaya.Location = new System.Drawing.Point(111, 61);
-            this.txtPlaya.Name = "txtPlaya";
-            this.txtPlaya.Size = new System.Drawing.Size(141, 20);
-            this.txtPlaya.TabIndex = 5;
-            this.txtPlaya.Text = "300";
-            this.txtPlaya.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtCiudad
-            // 
-            this.txtCiudad.Location = new System.Drawing.Point(111, 24);
-            this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(141, 20);
-            this.txtCiudad.TabIndex = 4;
-            this.txtCiudad.Text = "200";
-            this.txtCiudad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtCiudad.TextChanged += new System.EventHandler(this.txtCiudad_TextChanged);
             // 
             // lblTour
             // 
@@ -463,6 +345,7 @@ namespace Agencia_de_Viajes
             // grbActividades
             // 
             this.grbActividades.BackColor = System.Drawing.Color.White;
+            this.grbActividades.Controls.Add(this.txtCena);
             this.grbActividades.Controls.Add(this.txtSpa);
             this.grbActividades.Controls.Add(this.txtNaturAventura);
             this.grbActividades.Controls.Add(this.txtLavanderia);
@@ -471,7 +354,6 @@ namespace Agencia_de_Viajes
             this.grbActividades.Controls.Add(this.lblNaturAventura);
             this.grbActividades.Controls.Add(this.lblLavanderia);
             this.grbActividades.Controls.Add(this.lblExcursion);
-            this.grbActividades.Controls.Add(this.txtCena);
             this.grbActividades.Controls.Add(this.lblCena);
             this.grbActividades.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbActividades.Location = new System.Drawing.Point(257, 55);
@@ -480,42 +362,6 @@ namespace Agencia_de_Viajes
             this.grbActividades.TabIndex = 1;
             this.grbActividades.TabStop = false;
             this.grbActividades.Text = "Actividades";
-            // 
-            // txtSpa
-            // 
-            this.txtSpa.Location = new System.Drawing.Point(159, 240);
-            this.txtSpa.Name = "txtSpa";
-            this.txtSpa.Size = new System.Drawing.Size(133, 20);
-            this.txtSpa.TabIndex = 9;
-            this.txtSpa.Text = "40";
-            this.txtSpa.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtNaturAventura
-            // 
-            this.txtNaturAventura.Location = new System.Drawing.Point(159, 194);
-            this.txtNaturAventura.Name = "txtNaturAventura";
-            this.txtNaturAventura.Size = new System.Drawing.Size(133, 20);
-            this.txtNaturAventura.TabIndex = 8;
-            this.txtNaturAventura.Text = "60";
-            this.txtNaturAventura.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtLavanderia
-            // 
-            this.txtLavanderia.Location = new System.Drawing.Point(159, 147);
-            this.txtLavanderia.Name = "txtLavanderia";
-            this.txtLavanderia.Size = new System.Drawing.Size(133, 20);
-            this.txtLavanderia.TabIndex = 7;
-            this.txtLavanderia.Text = "15";
-            this.txtLavanderia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtExcursion
-            // 
-            this.txtExcursion.Location = new System.Drawing.Point(159, 100);
-            this.txtExcursion.Name = "txtExcursion";
-            this.txtExcursion.Size = new System.Drawing.Size(133, 20);
-            this.txtExcursion.TabIndex = 6;
-            this.txtExcursion.Text = "60";
-            this.txtExcursion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblSpa
             // 
@@ -552,15 +398,6 @@ namespace Agencia_de_Viajes
             this.lblExcursion.Size = new System.Drawing.Size(79, 26);
             this.lblExcursion.TabIndex = 2;
             this.lblExcursion.Text = "Excursión a \r\nsitios de interés";
-            // 
-            // txtCena
-            // 
-            this.txtCena.Location = new System.Drawing.Point(159, 51);
-            this.txtCena.Name = "txtCena";
-            this.txtCena.Size = new System.Drawing.Size(133, 20);
-            this.txtCena.TabIndex = 1;
-            this.txtCena.Text = "50";
-            this.txtCena.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblCena
             // 
@@ -600,33 +437,6 @@ namespace Agencia_de_Viajes
             this.grbFechas.TabStop = false;
             this.grbFechas.Text = "Por día según la temporada";
             // 
-            // txtBaja
-            // 
-            this.txtBaja.Location = new System.Drawing.Point(161, 131);
-            this.txtBaja.Name = "txtBaja";
-            this.txtBaja.Size = new System.Drawing.Size(128, 20);
-            this.txtBaja.TabIndex = 5;
-            this.txtBaja.Text = "10";
-            this.txtBaja.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtMediaTem
-            // 
-            this.txtMediaTem.Location = new System.Drawing.Point(161, 82);
-            this.txtMediaTem.Name = "txtMediaTem";
-            this.txtMediaTem.Size = new System.Drawing.Size(128, 20);
-            this.txtMediaTem.TabIndex = 4;
-            this.txtMediaTem.Text = "30";
-            this.txtMediaTem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtAlta
-            // 
-            this.txtAlta.Location = new System.Drawing.Point(161, 38);
-            this.txtAlta.Name = "txtAlta";
-            this.txtAlta.Size = new System.Drawing.Size(128, 20);
-            this.txtAlta.TabIndex = 3;
-            this.txtAlta.Text = "50";
-            this.txtAlta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // lblBaja
             // 
             this.lblBaja.AutoSize = true;
@@ -653,6 +463,216 @@ namespace Agencia_de_Viajes
             this.lblAlta.Size = new System.Drawing.Size(74, 26);
             this.lblAlta.TabIndex = 0;
             this.lblAlta.Text = "Alta\r\n(julio y agosto)";
+            // 
+            // txtCiudad
+            // 
+            this.txtCiudad.Location = new System.Drawing.Point(111, 28);
+            this.txtCiudad.Mask = "000";
+            this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.Size = new System.Drawing.Size(141, 20);
+            this.txtCiudad.TabIndex = 9;
+            this.txtCiudad.Text = "200";
+            this.txtCiudad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtPlaya
+            // 
+            this.txtPlaya.Location = new System.Drawing.Point(111, 65);
+            this.txtPlaya.Mask = "000";
+            this.txtPlaya.Name = "txtPlaya";
+            this.txtPlaya.Size = new System.Drawing.Size(141, 20);
+            this.txtPlaya.TabIndex = 10;
+            this.txtPlaya.Text = "300";
+            this.txtPlaya.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtMontain
+            // 
+            this.txtMontain.Location = new System.Drawing.Point(111, 101);
+            this.txtMontain.Mask = "000";
+            this.txtMontain.Name = "txtMontain";
+            this.txtMontain.Size = new System.Drawing.Size(141, 20);
+            this.txtMontain.TabIndex = 11;
+            this.txtMontain.Text = "400";
+            this.txtMontain.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtTour
+            // 
+            this.txtTour.Location = new System.Drawing.Point(111, 139);
+            this.txtTour.Mask = "000";
+            this.txtTour.Name = "txtTour";
+            this.txtTour.Size = new System.Drawing.Size(141, 20);
+            this.txtTour.TabIndex = 12;
+            this.txtTour.Text = "200";
+            this.txtTour.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtDormir
+            // 
+            this.txtDormir.Location = new System.Drawing.Point(111, 29);
+            this.txtDormir.Mask = "00";
+            this.txtDormir.Name = "txtDormir";
+            this.txtDormir.Size = new System.Drawing.Size(141, 20);
+            this.txtDormir.TabIndex = 10;
+            this.txtDormir.Text = "20";
+            this.txtDormir.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtMedia
+            // 
+            this.txtMedia.Location = new System.Drawing.Point(111, 64);
+            this.txtMedia.Mask = "00";
+            this.txtMedia.Name = "txtMedia";
+            this.txtMedia.Size = new System.Drawing.Size(141, 20);
+            this.txtMedia.TabIndex = 11;
+            this.txtMedia.Text = "30";
+            this.txtMedia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtCompleta
+            // 
+            this.txtCompleta.Location = new System.Drawing.Point(111, 96);
+            this.txtCompleta.Mask = "00";
+            this.txtCompleta.Name = "txtCompleta";
+            this.txtCompleta.Size = new System.Drawing.Size(141, 20);
+            this.txtCompleta.TabIndex = 12;
+            this.txtCompleta.Text = "60";
+            this.txtCompleta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtUnaEstrella
+            // 
+            this.txtUnaEstrella.Location = new System.Drawing.Point(145, 31);
+            this.txtUnaEstrella.Mask = "00";
+            this.txtUnaEstrella.Name = "txtUnaEstrella";
+            this.txtUnaEstrella.Size = new System.Drawing.Size(141, 20);
+            this.txtUnaEstrella.TabIndex = 11;
+            this.txtUnaEstrella.Text = "20";
+            this.txtUnaEstrella.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtDosEstrella
+            // 
+            this.txtDosEstrella.Location = new System.Drawing.Point(145, 68);
+            this.txtDosEstrella.Mask = "00";
+            this.txtDosEstrella.Name = "txtDosEstrella";
+            this.txtDosEstrella.Size = new System.Drawing.Size(141, 20);
+            this.txtDosEstrella.TabIndex = 12;
+            this.txtDosEstrella.Text = "30";
+            this.txtDosEstrella.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtTresEstrella
+            // 
+            this.txtTresEstrella.Location = new System.Drawing.Point(145, 110);
+            this.txtTresEstrella.Mask = "00";
+            this.txtTresEstrella.Name = "txtTresEstrella";
+            this.txtTresEstrella.Size = new System.Drawing.Size(141, 20);
+            this.txtTresEstrella.TabIndex = 13;
+            this.txtTresEstrella.Text = "40";
+            this.txtTresEstrella.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtCuatroEstrella
+            // 
+            this.txtCuatroEstrella.Location = new System.Drawing.Point(145, 144);
+            this.txtCuatroEstrella.Mask = "00";
+            this.txtCuatroEstrella.Name = "txtCuatroEstrella";
+            this.txtCuatroEstrella.Size = new System.Drawing.Size(141, 20);
+            this.txtCuatroEstrella.TabIndex = 14;
+            this.txtCuatroEstrella.Text = "60";
+            this.txtCuatroEstrella.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtCincoEstrella
+            // 
+            this.txtCincoEstrella.Location = new System.Drawing.Point(145, 183);
+            this.txtCincoEstrella.Mask = "00";
+            this.txtCincoEstrella.Name = "txtCincoEstrella";
+            this.txtCincoEstrella.Size = new System.Drawing.Size(141, 20);
+            this.txtCincoEstrella.TabIndex = 15;
+            this.txtCincoEstrella.Text = "80";
+            this.txtCincoEstrella.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtPersona
+            // 
+            this.txtPersona.Location = new System.Drawing.Point(597, 300);
+            this.txtPersona.Mask = "00";
+            this.txtPersona.Name = "txtPersona";
+            this.txtPersona.Size = new System.Drawing.Size(98, 20);
+            this.txtPersona.TabIndex = 16;
+            this.txtPersona.Text = "20";
+            this.txtPersona.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtExcursion
+            // 
+            this.txtExcursion.Location = new System.Drawing.Point(159, 94);
+            this.txtExcursion.Mask = "00";
+            this.txtExcursion.Name = "txtExcursion";
+            this.txtExcursion.Size = new System.Drawing.Size(133, 20);
+            this.txtExcursion.TabIndex = 17;
+            this.txtExcursion.Text = "60";
+            this.txtExcursion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtLavanderia
+            // 
+            this.txtLavanderia.Location = new System.Drawing.Point(159, 151);
+            this.txtLavanderia.Mask = "00";
+            this.txtLavanderia.Name = "txtLavanderia";
+            this.txtLavanderia.Size = new System.Drawing.Size(133, 20);
+            this.txtLavanderia.TabIndex = 18;
+            this.txtLavanderia.Text = "15";
+            this.txtLavanderia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtNaturAventura
+            // 
+            this.txtNaturAventura.Location = new System.Drawing.Point(159, 194);
+            this.txtNaturAventura.Mask = "00";
+            this.txtNaturAventura.Name = "txtNaturAventura";
+            this.txtNaturAventura.Size = new System.Drawing.Size(133, 20);
+            this.txtNaturAventura.TabIndex = 19;
+            this.txtNaturAventura.Text = "60";
+            this.txtNaturAventura.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtSpa
+            // 
+            this.txtSpa.Location = new System.Drawing.Point(159, 240);
+            this.txtSpa.Mask = "00";
+            this.txtSpa.Name = "txtSpa";
+            this.txtSpa.Size = new System.Drawing.Size(133, 20);
+            this.txtSpa.TabIndex = 20;
+            this.txtSpa.Text = "40";
+            this.txtSpa.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtCena
+            // 
+            this.txtCena.Location = new System.Drawing.Point(159, 51);
+            this.txtCena.Mask = "00";
+            this.txtCena.Name = "txtCena";
+            this.txtCena.Size = new System.Drawing.Size(133, 20);
+            this.txtCena.TabIndex = 21;
+            this.txtCena.Text = "50";
+            this.txtCena.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtAlta
+            // 
+            this.txtAlta.Location = new System.Drawing.Point(156, 39);
+            this.txtAlta.Mask = "00";
+            this.txtAlta.Name = "txtAlta";
+            this.txtAlta.Size = new System.Drawing.Size(133, 20);
+            this.txtAlta.TabIndex = 23;
+            this.txtAlta.Text = "50";
+            this.txtAlta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtMediaTem
+            // 
+            this.txtMediaTem.Location = new System.Drawing.Point(156, 82);
+            this.txtMediaTem.Mask = "00";
+            this.txtMediaTem.Name = "txtMediaTem";
+            this.txtMediaTem.Size = new System.Drawing.Size(133, 20);
+            this.txtMediaTem.TabIndex = 24;
+            this.txtMediaTem.Text = "30";
+            this.txtMediaTem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtBaja
+            // 
+            this.txtBaja.Location = new System.Drawing.Point(156, 131);
+            this.txtBaja.Mask = "00";
+            this.txtBaja.Name = "txtBaja";
+            this.txtBaja.Size = new System.Drawing.Size(133, 20);
+            this.txtBaja.TabIndex = 25;
+            this.txtBaja.Text = "10";
+            this.txtBaja.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // frmPrecios
             // 
@@ -702,51 +722,51 @@ namespace Agencia_de_Viajes
         private System.Windows.Forms.TabPage tpActividades;
         private System.Windows.Forms.TabPage tpFechas;
         private System.Windows.Forms.GroupBox grbDestinos;
-        public System.Windows.Forms.TextBox txtTour;
-        public System.Windows.Forms.TextBox txtMontain;
-        public System.Windows.Forms.TextBox txtPlaya;
-        public System.Windows.Forms.TextBox txtCiudad;
         private System.Windows.Forms.Label lblTour;
         private System.Windows.Forms.Label lblMontain;
         private System.Windows.Forms.Label lblPlaya;
         private System.Windows.Forms.Label lblCiudad;
         private System.Windows.Forms.GroupBox grbEstancia;
-        public System.Windows.Forms.TextBox txtCompleta;
-        public System.Windows.Forms.TextBox txtMedia;
-        public System.Windows.Forms.TextBox txtDormir;
         private System.Windows.Forms.Label lblCompleta;
         private System.Windows.Forms.Label lblMedia;
         private System.Windows.Forms.Label lblDormir;
-        public System.Windows.Forms.TextBox txtPersona;
         private System.Windows.Forms.Label lblPersona;
         private System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.TextBox txtCincoEstrella;
-        public System.Windows.Forms.TextBox txtCuatroEstrella;
-        public System.Windows.Forms.TextBox txtTresEstrella;
         private System.Windows.Forms.PictureBox pcbCincoEstrella;
-        public System.Windows.Forms.TextBox txtDosEstrella;
         private System.Windows.Forms.PictureBox pcbCuatroEstrella;
-        public System.Windows.Forms.TextBox txtUnaEstrella;
         private System.Windows.Forms.PictureBox pcbTresEstrella;
         private System.Windows.Forms.PictureBox pcbDosEstrella;
         private System.Windows.Forms.PictureBox pcbUnaEstrella;
         private System.Windows.Forms.GroupBox grbActividades;
-        public System.Windows.Forms.TextBox txtSpa;
-        public System.Windows.Forms.TextBox txtNaturAventura;
-        public System.Windows.Forms.TextBox txtLavanderia;
-        public System.Windows.Forms.TextBox txtExcursion;
         private System.Windows.Forms.Label lblSpa;
         private System.Windows.Forms.Label lblNaturAventura;
         private System.Windows.Forms.Label lblLavanderia;
         private System.Windows.Forms.Label lblExcursion;
-        public System.Windows.Forms.TextBox txtCena;
         private System.Windows.Forms.Label lblCena;
         private System.Windows.Forms.GroupBox grbFechas;
-        public System.Windows.Forms.TextBox txtBaja;
-        public System.Windows.Forms.TextBox txtMediaTem;
-        public System.Windows.Forms.TextBox txtAlta;
         private System.Windows.Forms.Label lblBaja;
         private System.Windows.Forms.Label lblMediaTem;
         private System.Windows.Forms.Label lblAlta;
+        private System.Windows.Forms.MaskedTextBox txtCiudad;
+        private System.Windows.Forms.MaskedTextBox txtPlaya;
+        private System.Windows.Forms.MaskedTextBox txtMontain;
+        private System.Windows.Forms.MaskedTextBox txtTour;
+        private System.Windows.Forms.MaskedTextBox txtMedia;
+        private System.Windows.Forms.MaskedTextBox txtDormir;
+        private System.Windows.Forms.MaskedTextBox txtCompleta;
+        private System.Windows.Forms.MaskedTextBox txtDosEstrella;
+        private System.Windows.Forms.MaskedTextBox txtUnaEstrella;
+        private System.Windows.Forms.MaskedTextBox txtTresEstrella;
+        private System.Windows.Forms.MaskedTextBox txtCuatroEstrella;
+        private System.Windows.Forms.MaskedTextBox txtCincoEstrella;
+        private System.Windows.Forms.MaskedTextBox txtPersona;
+        private System.Windows.Forms.MaskedTextBox txtSpa;
+        private System.Windows.Forms.MaskedTextBox txtNaturAventura;
+        private System.Windows.Forms.MaskedTextBox txtLavanderia;
+        private System.Windows.Forms.MaskedTextBox txtExcursion;
+        private System.Windows.Forms.MaskedTextBox txtCena;
+        private System.Windows.Forms.MaskedTextBox txtAlta;
+        private System.Windows.Forms.MaskedTextBox txtBaja;
+        private System.Windows.Forms.MaskedTextBox txtMediaTem;
     }
 }
