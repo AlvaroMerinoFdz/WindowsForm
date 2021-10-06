@@ -10,3 +10,16 @@ C:\Users\alvar\source\repos\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agenci
 C:\Users\alvar\source\repos\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia de Viajes.pdb
 C:\Users\alvar\source\repos\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia_de_Viajes.frmPrincipal.resources
 C:\Users\alvar\source\repos\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia_de_Viajes.frmAcuerdo.resources
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\bin\Debug\Agencia de Viajes.exe.config
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\bin\Debug\Agencia de Viajes.exe
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\bin\Debug\Agencia de Viajes.pdb
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia de Viajes.csproj.AssemblyReference.cache
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia_de_Viajes.frmAcuerdo.resources
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia_de_Viajes.frmPrecios.resources
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia_de_Viajes.frmPrincipal.resources
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia_de_Viajes.Properties.Resources.resources
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia_de_Viajes.frmSplash.resources
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia de Viajes.csproj.GenerateResource.cache
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia de Viajes.csproj.CoreCompileInputs.cache
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia de Viajes.exe
+C:\Users\alvar\Source\Repos\WindowsForm\Agencia de Viajes\Agencia de Viajes\obj\Debug\Agencia de Viajes.pdb
