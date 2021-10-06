@@ -33,6 +33,9 @@ namespace Agencia_de_Viajes
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.tsMenu = new System.Windows.Forms.ToolStrip();
+            this.tsbtnVolver = new System.Windows.Forms.ToolStripButton();
+            this.tsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -67,20 +70,43 @@ namespace Agencia_de_Viajes
             this.label3.TabIndex = 2;
             this.label3.Text = "La Empresa";
             // 
+            // tsMenu
+            // 
+            this.tsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbtnVolver});
+            this.tsMenu.Location = new System.Drawing.Point(0, 0);
+            this.tsMenu.Name = "tsMenu";
+            this.tsMenu.Size = new System.Drawing.Size(540, 25);
+            this.tsMenu.TabIndex = 3;
+            this.tsMenu.Text = "toolStrip1";
+            // 
+            // tsbtnVolver
+            // 
+            this.tsbtnVolver.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnVolver.Image = ((System.Drawing.Image)(resources.GetObject("tsbtnVolver.Image")));
+            this.tsbtnVolver.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnVolver.Name = "tsbtnVolver";
+            this.tsbtnVolver.Size = new System.Drawing.Size(23, 22);
+            this.tsbtnVolver.Text = "toolStripButton1";
+            this.tsbtnVolver.Click += new System.EventHandler(this.tsbtnVolver_Click);
+            // 
             // frmAcuerdo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(540, 263);
+            this.Controls.Add(this.tsMenu);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAcuerdo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acuerdo";
+            this.tsMenu.ResumeLayout(false);
+            this.tsMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,5 +117,7 @@ namespace Agencia_de_Viajes
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStrip tsMenu;
+        private System.Windows.Forms.ToolStripButton tsbtnVolver;
     }
 }

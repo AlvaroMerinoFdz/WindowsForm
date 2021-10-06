@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Agencia_de_Viajes
@@ -13,11 +6,12 @@ namespace Agencia_de_Viajes
     public partial class frmPrincipal : Form
     {
         frmPrecios precios = new frmPrecios();
-        private int precio;
+        DateTime inicial;
+        DateTime final;
         public frmPrincipal()
         {
             InitializeComponent();
-            
+
         }
 
         private void frmPrincipal_FormClosed(object sender, FormClosedEventArgs e)
@@ -52,42 +46,124 @@ namespace Agencia_de_Viajes
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            btnValidar.Enabled = true;
             txtValidar.Text = "";
             tsBarraProgeso.Value = 0;
             if (lstbDestino.SelectedIndex < 0)
             {
                 MessageBox.Show("Tienes que seleccionar un destino. ", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
             }
             else
             {
                 iniciarBarraProgeso();
                 mostrarPrecio();
-               // lblPrecio.Text = calcularPrecio().ToString() + " €";
+                lblPrecio.Text = calcularPrecio().ToString() + " €";
             }
         }
 
-        private object calcularPrecio()
+        private int calcularPrecio()
         {
-            object a = null;
-            return a;
+            return precios.destinos[lstbDestino.SelectedIndex] + precioEstrellas() + precioPersonas() + precioEstancia() + precioDias();
         }
 
         private void mostrarPrecio()
         {
-            txtValidar.AppendText("Destino " + lstbDestino.SelectedItem.ToString() + " tiene un precio de:  \r\n");
-            txtValidar.AppendText("Hotel de  " + nupdEstrellas.Value.ToString() + " estrellas,  tiene un precio de:  \r\n");
-            txtValidar.AppendText("Total de personas " + nupdPersonas.Value.ToString() + " tiene un precio de:  \r\n");
-            txtValidar.AppendText("Tipo de estancia " + gpbEstancia.Text.ToString() + " tiene un precio de:  \r\n");
-            txtValidar.AppendText("Total de días " + dias() + " tiene un precio de:  \r\n");
+            txtValidar.AppendText("Destino " + lstbDestino.SelectedItem.ToString() + " tiene un precio de: " + precios.destinos[lstbDestino.SelectedIndex] + " €\r\n");
+            txtValidar.AppendText("Hotel de  " + nupdEstrellas.Value.ToString() + " estrellas,  tiene un precio de:  " + precioEstrellas() + " €\r\n");
+            txtValidar.AppendText("Total de personas " + nupdPersonas.Value.ToString() + " tiene un precio de:  " + precioPersonas() + "€ \r\n");
+            txtValidar.AppendText("Tipo de estancia " + gpbEstancia.Text.ToString() + " tiene un precio de:  " + precioEstancia() + "€ \r\n");
+            txtValidar.AppendText("Total de días " + dias() + " tiene un precio de: " + precioDias() + "€ \r\n");
+        }
+
+        private int precioDias()
+        {
+            int precio = 0;
+            for (int i = 0; i < dias(); i++)
+            {
+                precio += precioTemporada(inicial.AddDays(i).Month);
+            }
+            return precio;
+
+        }
+
+        private int precioTemporada(int mes)
+        {
+            switch (mes)
+            {
+                case 7:
+                case 8:
+                    return precios.fechas[0];
+                case 1:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                    return precios.fechas[1];
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                    return precios.fechas[2];
+                default:
+                    return 0;
+            }
+        }
+
+        private int precioEstancia()
+        {
+            int precio = 0;
+            if (rdbDormir.Checked)
+            {
+                precio = precios.estancia[0];
+            }
+            else if (rdbMedia.Checked)
+            {
+                precio = precios.estancia[1];
+            }
+            else
+            {
+                precio = precios.estancia[2];
+            }
+            return precio;
+        }
+
+        private int precioPersonas()
+        {
+            return (int)(nupdPersonas.Value * precios.persona);
+        }
+
+        private int precioEstrellas()
+        {
+            int precioEstrella = 0;
+            switch ((int)(nupdEstrellas.Value))
+            {
+                case 1:
+                    precioEstrella = precios.estrellas[0];
+                    break;
+                case 2:
+                    precioEstrella = precios.estrellas[1];
+                    break;
+                case 3:
+                    precioEstrella = precios.estrellas[2];
+                    break;
+                case 4:
+                    precioEstrella = precios.estrellas[3];
+                    break;
+                case 5:
+                    precioEstrella = precios.estrellas[4];
+                    break;
+
+            }
+            return precioEstrella;
         }
 
         private int dias()
         {
-            DateTime inicio = mntclndFechas.SelectionStart;
-            DateTime final = mntclndFechas.SelectionEnd;
-            var diferencia = final - inicio;
-            return diferencia.Days + 1;
+            inicial = mntclndFechas.SelectionStart;
+            final = mntclndFechas.SelectionEnd;
+            var dif = final - inicial;
+            return dif.Days + 1;
         }
 
         private void iniciarBarraProgeso()
@@ -99,12 +175,17 @@ namespace Agencia_de_Viajes
         private void incrementarBarra(object sender, EventArgs e)
         {
             tsBarraProgeso.Increment(1);
-            if (tsBarraProgeso.Value == tsBarraProgeso.Maximum) tsBarraProgeso.Value = 0;
         }
 
         private void btnValidar_Click(object sender, EventArgs e)
         {
-            
+            tsBarraProgeso.Value = 100;
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            precios.Show();
+            precios.Hide();
         }
     }
 }

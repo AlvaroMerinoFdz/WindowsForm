@@ -87,9 +87,9 @@ namespace Agencia_de_Viajes
             this.toolStripStatusLabel1,
             this.tsBarraProgeso,
             this.lblHora});
-            this.stsBarraInferior.Location = new System.Drawing.Point(0, 561);
+            this.stsBarraInferior.Location = new System.Drawing.Point(0, 629);
             this.stsBarraInferior.Name = "stsBarraInferior";
-            this.stsBarraInferior.Size = new System.Drawing.Size(876, 22);
+            this.stsBarraInferior.Size = new System.Drawing.Size(838, 22);
             this.stsBarraInferior.TabIndex = 1;
             this.stsBarraInferior.Text = "statusStrip1";
             // 
@@ -124,7 +124,7 @@ namespace Agencia_de_Viajes
             this.salirToolStripMenuItem});
             this.msMenu1.Location = new System.Drawing.Point(0, 0);
             this.msMenu1.Name = "msMenu1";
-            this.msMenu1.Size = new System.Drawing.Size(876, 24);
+            this.msMenu1.Size = new System.Drawing.Size(838, 24);
             this.msMenu1.TabIndex = 2;
             this.msMenu1.Text = "menuStrip1";
             // 
@@ -280,8 +280,8 @@ namespace Agencia_de_Viajes
             this.imgListDestino.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgListDestino.ImageStream")));
             this.imgListDestino.TransparentColor = System.Drawing.Color.Transparent;
             this.imgListDestino.Images.SetKeyName(0, "ciudad.jpg");
-            this.imgListDestino.Images.SetKeyName(1, "montaña.jpg");
-            this.imgListDestino.Images.SetKeyName(2, "playa.jpeg");
+            this.imgListDestino.Images.SetKeyName(1, "playa.jpeg");
+            this.imgListDestino.Images.SetKeyName(2, "montaña.jpg");
             this.imgListDestino.Images.SetKeyName(3, "tour.jpg");
             // 
             // gpbEstancia
@@ -331,9 +331,9 @@ namespace Agencia_de_Viajes
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(26, 390);
+            this.btnCalcular.Location = new System.Drawing.Point(12, 407);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(204, 30);
+            this.btnCalcular.Size = new System.Drawing.Size(200, 30);
             this.btnCalcular.TabIndex = 13;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -363,13 +363,14 @@ namespace Agencia_de_Viajes
             this.panel1.Controls.Add(this.txtValidar);
             this.panel1.Location = new System.Drawing.Point(268, 390);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(519, 158);
+            this.panel1.Size = new System.Drawing.Size(536, 236);
             this.panel1.TabIndex = 16;
             // 
             // btnValidar
             // 
+            this.btnValidar.Enabled = false;
             this.btnValidar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValidar.Location = new System.Drawing.Point(422, 126);
+            this.btnValidar.Location = new System.Drawing.Point(428, 199);
             this.btnValidar.Name = "btnValidar";
             this.btnValidar.Size = new System.Drawing.Size(75, 23);
             this.btnValidar.TabIndex = 2;
@@ -380,7 +381,7 @@ namespace Agencia_de_Viajes
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(30, 131);
+            this.lblPrecio.Location = new System.Drawing.Point(30, 204);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(37, 13);
             this.lblPrecio.TabIndex = 1;
@@ -392,7 +393,7 @@ namespace Agencia_de_Viajes
             this.txtValidar.Location = new System.Drawing.Point(24, 17);
             this.txtValidar.Multiline = true;
             this.txtValidar.Name = "txtValidar";
-            this.txtValidar.Size = new System.Drawing.Size(473, 102);
+            this.txtValidar.Size = new System.Drawing.Size(479, 176);
             this.txtValidar.TabIndex = 0;
             // 
             // toolStrip1
@@ -403,7 +404,7 @@ namespace Agencia_de_Viajes
             this.toolStripButton3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(876, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(838, 25);
             this.toolStrip1.TabIndex = 17;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -414,7 +415,7 @@ namespace Agencia_de_Viajes
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Text = "Acuerdo Empresa";
             this.toolStripButton1.Click += new System.EventHandler(this.acuerdoEmpresaToolStripMenuItem_Click);
             // 
             // toolStripButton2
@@ -424,7 +425,7 @@ namespace Agencia_de_Viajes
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.Text = "Precios";
             this.toolStripButton2.Click += new System.EventHandler(this.preciosToolStripMenuItem_Click);
             // 
             // toolStripButton3
@@ -434,7 +435,7 @@ namespace Agencia_de_Viajes
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.Text = "Salir";
             this.toolStripButton3.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // frmPrincipal
@@ -442,7 +443,7 @@ namespace Agencia_de_Viajes
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(876, 583);
+            this.ClientSize = new System.Drawing.Size(838, 651);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.mntclndFechas);
@@ -466,6 +467,7 @@ namespace Agencia_de_Viajes
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agencia de Viajes IFP VdG";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPrincipal_FormClosed);
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.stsBarraInferior.ResumeLayout(false);
             this.stsBarraInferior.PerformLayout();
             this.msMenu1.ResumeLayout(false);

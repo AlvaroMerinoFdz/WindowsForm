@@ -1,24 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Agencia_de_Viajes
 {
     public partial class frmPrecios : Form
     {
-        private int[] destinos = new int[4];
-        private int[] estancia = new int[3];
-        private int[] estrellas = new int[5];
-        private int persona;
-        private int[] actividades = new int[5];
-        private int[] fechas = new int[3];
-        private int num;
+        public int[] destinos = new int[4];
+        public int[] estancia = new int[3];
+        public int[] estrellas = new int[5];
+        public int persona;
+        public int[] actividades = new int[5];
+        public int[] fechas = new int[3];
+        public int num;
 
 
         public frmPrecios()
@@ -36,7 +29,7 @@ namespace Agencia_de_Viajes
 
         /**
          * Este método almacena los valores de los text box, al mostrarse el formulario precios.
-         */ 
+         */
         private void frmPrecios_Shown(object sender, EventArgs e)
         {
             //Almacenamos los valores de los destinos
@@ -101,5 +94,5 @@ namespace Agencia_de_Viajes
             }
         }*/
     }
-        
+
 }
