@@ -34,17 +34,13 @@ namespace Agencia_de_Viajes
             this.tsbtnVolver = new System.Windows.Forms.ToolStripButton();
             this.tcPrecios = new System.Windows.Forms.TabControl();
             this.tpDestinos = new System.Windows.Forms.TabPage();
-            this.tpActividades = new System.Windows.Forms.TabPage();
-            this.tpFechas = new System.Windows.Forms.TabPage();
-            this.grbDestinos = new System.Windows.Forms.GroupBox();
-            this.txtTour = new System.Windows.Forms.TextBox();
-            this.txtMontain = new System.Windows.Forms.TextBox();
-            this.txtPlaya = new System.Windows.Forms.TextBox();
-            this.txtCiudad = new System.Windows.Forms.TextBox();
-            this.lblTour = new System.Windows.Forms.Label();
-            this.lblMontain = new System.Windows.Forms.Label();
-            this.lblPlaya = new System.Windows.Forms.Label();
-            this.lblCiudad = new System.Windows.Forms.Label();
+            this.grbEstancia = new System.Windows.Forms.GroupBox();
+            this.txtCompleta = new System.Windows.Forms.TextBox();
+            this.txtMedia = new System.Windows.Forms.TextBox();
+            this.txtDormir = new System.Windows.Forms.TextBox();
+            this.lblCompleta = new System.Windows.Forms.Label();
+            this.lblMedia = new System.Windows.Forms.Label();
+            this.lblDormir = new System.Windows.Forms.Label();
             this.txtPersona = new System.Windows.Forms.TextBox();
             this.lblPersona = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -58,13 +54,16 @@ namespace Agencia_de_Viajes
             this.pcbTresEstrella = new System.Windows.Forms.PictureBox();
             this.pcbDosEstrella = new System.Windows.Forms.PictureBox();
             this.pcbUnaEstrella = new System.Windows.Forms.PictureBox();
-            this.grbEstancia = new System.Windows.Forms.GroupBox();
-            this.txtCompleta = new System.Windows.Forms.TextBox();
-            this.txtMedia = new System.Windows.Forms.TextBox();
-            this.txtDormir = new System.Windows.Forms.TextBox();
-            this.lblCompleta = new System.Windows.Forms.Label();
-            this.lblMedia = new System.Windows.Forms.Label();
-            this.lblDormir = new System.Windows.Forms.Label();
+            this.grbDestinos = new System.Windows.Forms.GroupBox();
+            this.txtTour = new System.Windows.Forms.TextBox();
+            this.txtMontain = new System.Windows.Forms.TextBox();
+            this.txtPlaya = new System.Windows.Forms.TextBox();
+            this.txtCiudad = new System.Windows.Forms.TextBox();
+            this.lblTour = new System.Windows.Forms.Label();
+            this.lblMontain = new System.Windows.Forms.Label();
+            this.lblPlaya = new System.Windows.Forms.Label();
+            this.lblCiudad = new System.Windows.Forms.Label();
+            this.tpActividades = new System.Windows.Forms.TabPage();
             this.grbActividades = new System.Windows.Forms.GroupBox();
             this.txtSpa = new System.Windows.Forms.TextBox();
             this.txtNaturAventura = new System.Windows.Forms.TextBox();
@@ -76,6 +75,7 @@ namespace Agencia_de_Viajes
             this.lblExcursion = new System.Windows.Forms.Label();
             this.txtCena = new System.Windows.Forms.TextBox();
             this.lblCena = new System.Windows.Forms.Label();
+            this.tpFechas = new System.Windows.Forms.TabPage();
             this.grbFechas = new System.Windows.Forms.GroupBox();
             this.txtBaja = new System.Windows.Forms.TextBox();
             this.txtMediaTem = new System.Windows.Forms.TextBox();
@@ -86,17 +86,17 @@ namespace Agencia_de_Viajes
             this.tsMenu.SuspendLayout();
             this.tcPrecios.SuspendLayout();
             this.tpDestinos.SuspendLayout();
-            this.tpActividades.SuspendLayout();
-            this.tpFechas.SuspendLayout();
-            this.grbDestinos.SuspendLayout();
+            this.grbEstancia.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCincoEstrella)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCuatroEstrella)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTresEstrella)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDosEstrella)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbUnaEstrella)).BeginInit();
-            this.grbEstancia.SuspendLayout();
+            this.grbDestinos.SuspendLayout();
+            this.tpActividades.SuspendLayout();
             this.grbActividades.SuspendLayout();
+            this.tpFechas.SuspendLayout();
             this.grbFechas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,127 +148,78 @@ namespace Agencia_de_Viajes
             this.tpDestinos.Text = "Destinos";
             this.tpDestinos.UseVisualStyleBackColor = true;
             // 
-            // tpActividades
+            // grbEstancia
             // 
-            this.tpActividades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tpActividades.BackgroundImage")));
-            this.tpActividades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tpActividades.Controls.Add(this.grbActividades);
-            this.tpActividades.Location = new System.Drawing.Point(4, 22);
-            this.tpActividades.Name = "tpActividades";
-            this.tpActividades.Padding = new System.Windows.Forms.Padding(3);
-            this.tpActividades.Size = new System.Drawing.Size(792, 394);
-            this.tpActividades.TabIndex = 1;
-            this.tpActividades.Text = "Actividades";
-            this.tpActividades.UseVisualStyleBackColor = true;
+            this.grbEstancia.BackColor = System.Drawing.Color.White;
+            this.grbEstancia.Controls.Add(this.txtCompleta);
+            this.grbEstancia.Controls.Add(this.txtMedia);
+            this.grbEstancia.Controls.Add(this.txtDormir);
+            this.grbEstancia.Controls.Add(this.lblCompleta);
+            this.grbEstancia.Controls.Add(this.lblMedia);
+            this.grbEstancia.Controls.Add(this.lblDormir);
+            this.grbEstancia.Location = new System.Drawing.Point(33, 224);
+            this.grbEstancia.Name = "grbEstancia";
+            this.grbEstancia.Size = new System.Drawing.Size(271, 144);
+            this.grbEstancia.TabIndex = 15;
+            this.grbEstancia.TabStop = false;
+            this.grbEstancia.Text = "Tipo de estancia";
             // 
-            // tpFechas
+            // txtCompleta
             // 
-            this.tpFechas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tpFechas.BackgroundImage")));
-            this.tpFechas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tpFechas.Controls.Add(this.grbFechas);
-            this.tpFechas.Location = new System.Drawing.Point(4, 22);
-            this.tpFechas.Name = "tpFechas";
-            this.tpFechas.Padding = new System.Windows.Forms.Padding(3);
-            this.tpFechas.Size = new System.Drawing.Size(792, 394);
-            this.tpFechas.TabIndex = 2;
-            this.tpFechas.Text = "Fechas";
-            this.tpFechas.UseVisualStyleBackColor = true;
+            this.txtCompleta.Location = new System.Drawing.Point(111, 96);
+            this.txtCompleta.Name = "txtCompleta";
+            this.txtCompleta.Size = new System.Drawing.Size(141, 20);
+            this.txtCompleta.TabIndex = 5;
+            this.txtCompleta.Text = "60";
+            this.txtCompleta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // grbDestinos
+            // txtMedia
             // 
-            this.grbDestinos.BackColor = System.Drawing.Color.White;
-            this.grbDestinos.Controls.Add(this.txtTour);
-            this.grbDestinos.Controls.Add(this.txtMontain);
-            this.grbDestinos.Controls.Add(this.txtPlaya);
-            this.grbDestinos.Controls.Add(this.txtCiudad);
-            this.grbDestinos.Controls.Add(this.lblTour);
-            this.grbDestinos.Controls.Add(this.lblMontain);
-            this.grbDestinos.Controls.Add(this.lblPlaya);
-            this.grbDestinos.Controls.Add(this.lblCiudad);
-            this.grbDestinos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grbDestinos.Location = new System.Drawing.Point(33, 27);
-            this.grbDestinos.Name = "grbDestinos";
-            this.grbDestinos.Size = new System.Drawing.Size(271, 174);
-            this.grbDestinos.TabIndex = 2;
-            this.grbDestinos.TabStop = false;
-            this.grbDestinos.Text = "Destinos";
+            this.txtMedia.Location = new System.Drawing.Point(111, 60);
+            this.txtMedia.Name = "txtMedia";
+            this.txtMedia.Size = new System.Drawing.Size(141, 20);
+            this.txtMedia.TabIndex = 4;
+            this.txtMedia.Text = "30";
+            this.txtMedia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtTour
+            // txtDormir
             // 
-            this.txtTour.Location = new System.Drawing.Point(111, 135);
-            this.txtTour.Name = "txtTour";
-            this.txtTour.Size = new System.Drawing.Size(141, 20);
-            this.txtTour.TabIndex = 7;
-            this.txtTour.Text = "500";
-            this.txtTour.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDormir.Location = new System.Drawing.Point(111, 25);
+            this.txtDormir.Name = "txtDormir";
+            this.txtDormir.Size = new System.Drawing.Size(141, 20);
+            this.txtDormir.TabIndex = 3;
+            this.txtDormir.Text = "20";
+            this.txtDormir.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtMontain
+            // lblCompleta
             // 
-            this.txtMontain.Location = new System.Drawing.Point(111, 101);
-            this.txtMontain.Name = "txtMontain";
-            this.txtMontain.Size = new System.Drawing.Size(141, 20);
-            this.txtMontain.TabIndex = 6;
-            this.txtMontain.Text = "400";
-            this.txtMontain.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.lblCompleta.AutoSize = true;
+            this.lblCompleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompleta.Location = new System.Drawing.Point(19, 103);
+            this.lblCompleta.Name = "lblCompleta";
+            this.lblCompleta.Size = new System.Drawing.Size(59, 13);
+            this.lblCompleta.TabIndex = 2;
+            this.lblCompleta.Text = "Completa";
             // 
-            // txtPlaya
+            // lblMedia
             // 
-            this.txtPlaya.Location = new System.Drawing.Point(111, 61);
-            this.txtPlaya.Name = "txtPlaya";
-            this.txtPlaya.Size = new System.Drawing.Size(141, 20);
-            this.txtPlaya.TabIndex = 5;
-            this.txtPlaya.Text = "300";
-            this.txtPlaya.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.lblMedia.AutoSize = true;
+            this.lblMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedia.Location = new System.Drawing.Point(19, 67);
+            this.lblMedia.Name = "lblMedia";
+            this.lblMedia.Size = new System.Drawing.Size(41, 13);
+            this.lblMedia.TabIndex = 1;
+            this.lblMedia.Text = "Media";
             // 
-            // txtCiudad
+            // lblDormir
             // 
-            this.txtCiudad.Location = new System.Drawing.Point(111, 24);
-            this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(141, 20);
-            this.txtCiudad.TabIndex = 4;
-            this.txtCiudad.Text = "200";
-            this.txtCiudad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtCiudad.TextChanged += new System.EventHandler(this.txtCiudad_TextChanged);
-            // 
-            // lblTour
-            // 
-            this.lblTour.AutoSize = true;
-            this.lblTour.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTour.Location = new System.Drawing.Point(19, 142);
-            this.lblTour.Name = "lblTour";
-            this.lblTour.Size = new System.Drawing.Size(33, 13);
-            this.lblTour.TabIndex = 3;
-            this.lblTour.Text = "Tour";
-            // 
-            // lblMontain
-            // 
-            this.lblMontain.AutoSize = true;
-            this.lblMontain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMontain.Location = new System.Drawing.Point(19, 108);
-            this.lblMontain.Name = "lblMontain";
-            this.lblMontain.Size = new System.Drawing.Size(56, 13);
-            this.lblMontain.TabIndex = 2;
-            this.lblMontain.Text = "Montaña";
-            // 
-            // lblPlaya
-            // 
-            this.lblPlaya.AutoSize = true;
-            this.lblPlaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaya.Location = new System.Drawing.Point(19, 68);
-            this.lblPlaya.Name = "lblPlaya";
-            this.lblPlaya.Size = new System.Drawing.Size(38, 13);
-            this.lblPlaya.TabIndex = 1;
-            this.lblPlaya.Text = "Playa";
-            // 
-            // lblCiudad
-            // 
-            this.lblCiudad.AutoSize = true;
-            this.lblCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCiudad.Location = new System.Drawing.Point(19, 31);
-            this.lblCiudad.Name = "lblCiudad";
-            this.lblCiudad.Size = new System.Drawing.Size(46, 13);
-            this.lblCiudad.TabIndex = 0;
-            this.lblCiudad.Text = "Ciudad";
+            this.lblDormir.AutoSize = true;
+            this.lblDormir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDormir.Location = new System.Drawing.Point(19, 32);
+            this.lblDormir.Name = "lblDormir";
+            this.lblDormir.Size = new System.Drawing.Size(43, 13);
+            this.lblDormir.TabIndex = 0;
+            this.lblDormir.Text = "Dormir";
             // 
             // txtPersona
             // 
@@ -400,78 +351,114 @@ namespace Agencia_de_Viajes
             this.pcbUnaEstrella.TabIndex = 0;
             this.pcbUnaEstrella.TabStop = false;
             // 
-            // grbEstancia
+            // grbDestinos
             // 
-            this.grbEstancia.BackColor = System.Drawing.Color.White;
-            this.grbEstancia.Controls.Add(this.txtCompleta);
-            this.grbEstancia.Controls.Add(this.txtMedia);
-            this.grbEstancia.Controls.Add(this.txtDormir);
-            this.grbEstancia.Controls.Add(this.lblCompleta);
-            this.grbEstancia.Controls.Add(this.lblMedia);
-            this.grbEstancia.Controls.Add(this.lblDormir);
-            this.grbEstancia.Location = new System.Drawing.Point(33, 224);
-            this.grbEstancia.Name = "grbEstancia";
-            this.grbEstancia.Size = new System.Drawing.Size(271, 144);
-            this.grbEstancia.TabIndex = 15;
-            this.grbEstancia.TabStop = false;
-            this.grbEstancia.Text = "Tipo de estancia";
+            this.grbDestinos.BackColor = System.Drawing.Color.White;
+            this.grbDestinos.Controls.Add(this.txtTour);
+            this.grbDestinos.Controls.Add(this.txtMontain);
+            this.grbDestinos.Controls.Add(this.txtPlaya);
+            this.grbDestinos.Controls.Add(this.txtCiudad);
+            this.grbDestinos.Controls.Add(this.lblTour);
+            this.grbDestinos.Controls.Add(this.lblMontain);
+            this.grbDestinos.Controls.Add(this.lblPlaya);
+            this.grbDestinos.Controls.Add(this.lblCiudad);
+            this.grbDestinos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbDestinos.Location = new System.Drawing.Point(33, 27);
+            this.grbDestinos.Name = "grbDestinos";
+            this.grbDestinos.Size = new System.Drawing.Size(271, 174);
+            this.grbDestinos.TabIndex = 2;
+            this.grbDestinos.TabStop = false;
+            this.grbDestinos.Text = "Destinos";
             // 
-            // txtCompleta
+            // txtTour
             // 
-            this.txtCompleta.Location = new System.Drawing.Point(111, 96);
-            this.txtCompleta.Name = "txtCompleta";
-            this.txtCompleta.Size = new System.Drawing.Size(141, 20);
-            this.txtCompleta.TabIndex = 5;
-            this.txtCompleta.Text = "60";
-            this.txtCompleta.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTour.Location = new System.Drawing.Point(111, 135);
+            this.txtTour.Name = "txtTour";
+            this.txtTour.Size = new System.Drawing.Size(141, 20);
+            this.txtTour.TabIndex = 7;
+            this.txtTour.Text = "500";
+            this.txtTour.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtMedia
+            // txtMontain
             // 
-            this.txtMedia.Location = new System.Drawing.Point(111, 60);
-            this.txtMedia.Name = "txtMedia";
-            this.txtMedia.Size = new System.Drawing.Size(141, 20);
-            this.txtMedia.TabIndex = 4;
-            this.txtMedia.Text = "30";
-            this.txtMedia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMontain.Location = new System.Drawing.Point(111, 101);
+            this.txtMontain.Name = "txtMontain";
+            this.txtMontain.Size = new System.Drawing.Size(141, 20);
+            this.txtMontain.TabIndex = 6;
+            this.txtMontain.Text = "400";
+            this.txtMontain.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtDormir
+            // txtPlaya
             // 
-            this.txtDormir.Location = new System.Drawing.Point(111, 25);
-            this.txtDormir.Name = "txtDormir";
-            this.txtDormir.Size = new System.Drawing.Size(141, 20);
-            this.txtDormir.TabIndex = 3;
-            this.txtDormir.Text = "20";
-            this.txtDormir.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPlaya.Location = new System.Drawing.Point(111, 61);
+            this.txtPlaya.Name = "txtPlaya";
+            this.txtPlaya.Size = new System.Drawing.Size(141, 20);
+            this.txtPlaya.TabIndex = 5;
+            this.txtPlaya.Text = "300";
+            this.txtPlaya.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // lblCompleta
+            // txtCiudad
             // 
-            this.lblCompleta.AutoSize = true;
-            this.lblCompleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompleta.Location = new System.Drawing.Point(19, 103);
-            this.lblCompleta.Name = "lblCompleta";
-            this.lblCompleta.Size = new System.Drawing.Size(59, 13);
-            this.lblCompleta.TabIndex = 2;
-            this.lblCompleta.Text = "Completa";
+            this.txtCiudad.Location = new System.Drawing.Point(111, 24);
+            this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.Size = new System.Drawing.Size(141, 20);
+            this.txtCiudad.TabIndex = 4;
+            this.txtCiudad.Text = "200";
+            this.txtCiudad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCiudad.TextChanged += new System.EventHandler(this.txtCiudad_TextChanged);
             // 
-            // lblMedia
+            // lblTour
             // 
-            this.lblMedia.AutoSize = true;
-            this.lblMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedia.Location = new System.Drawing.Point(19, 67);
-            this.lblMedia.Name = "lblMedia";
-            this.lblMedia.Size = new System.Drawing.Size(41, 13);
-            this.lblMedia.TabIndex = 1;
-            this.lblMedia.Text = "Media";
+            this.lblTour.AutoSize = true;
+            this.lblTour.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTour.Location = new System.Drawing.Point(19, 142);
+            this.lblTour.Name = "lblTour";
+            this.lblTour.Size = new System.Drawing.Size(33, 13);
+            this.lblTour.TabIndex = 3;
+            this.lblTour.Text = "Tour";
             // 
-            // lblDormir
+            // lblMontain
             // 
-            this.lblDormir.AutoSize = true;
-            this.lblDormir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDormir.Location = new System.Drawing.Point(19, 32);
-            this.lblDormir.Name = "lblDormir";
-            this.lblDormir.Size = new System.Drawing.Size(43, 13);
-            this.lblDormir.TabIndex = 0;
-            this.lblDormir.Text = "Dormir";
+            this.lblMontain.AutoSize = true;
+            this.lblMontain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMontain.Location = new System.Drawing.Point(19, 108);
+            this.lblMontain.Name = "lblMontain";
+            this.lblMontain.Size = new System.Drawing.Size(56, 13);
+            this.lblMontain.TabIndex = 2;
+            this.lblMontain.Text = "Montaña";
+            // 
+            // lblPlaya
+            // 
+            this.lblPlaya.AutoSize = true;
+            this.lblPlaya.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlaya.Location = new System.Drawing.Point(19, 68);
+            this.lblPlaya.Name = "lblPlaya";
+            this.lblPlaya.Size = new System.Drawing.Size(38, 13);
+            this.lblPlaya.TabIndex = 1;
+            this.lblPlaya.Text = "Playa";
+            // 
+            // lblCiudad
+            // 
+            this.lblCiudad.AutoSize = true;
+            this.lblCiudad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCiudad.Location = new System.Drawing.Point(19, 31);
+            this.lblCiudad.Name = "lblCiudad";
+            this.lblCiudad.Size = new System.Drawing.Size(46, 13);
+            this.lblCiudad.TabIndex = 0;
+            this.lblCiudad.Text = "Ciudad";
+            // 
+            // tpActividades
+            // 
+            this.tpActividades.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tpActividades.BackgroundImage")));
+            this.tpActividades.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tpActividades.Controls.Add(this.grbActividades);
+            this.tpActividades.Location = new System.Drawing.Point(4, 22);
+            this.tpActividades.Name = "tpActividades";
+            this.tpActividades.Padding = new System.Windows.Forms.Padding(3);
+            this.tpActividades.Size = new System.Drawing.Size(792, 394);
+            this.tpActividades.TabIndex = 1;
+            this.tpActividades.Text = "Actividades";
+            this.tpActividades.UseVisualStyleBackColor = true;
             // 
             // grbActividades
             // 
@@ -584,6 +571,19 @@ namespace Agencia_de_Viajes
             this.lblCena.TabIndex = 0;
             this.lblCena.Text = "Cena \r\ny espectáculos";
             // 
+            // tpFechas
+            // 
+            this.tpFechas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tpFechas.BackgroundImage")));
+            this.tpFechas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tpFechas.Controls.Add(this.grbFechas);
+            this.tpFechas.Location = new System.Drawing.Point(4, 22);
+            this.tpFechas.Name = "tpFechas";
+            this.tpFechas.Padding = new System.Windows.Forms.Padding(3);
+            this.tpFechas.Size = new System.Drawing.Size(792, 394);
+            this.tpFechas.TabIndex = 2;
+            this.tpFechas.Text = "Fechas";
+            this.tpFechas.UseVisualStyleBackColor = true;
+            // 
             // grbFechas
             // 
             this.grbFechas.BackColor = System.Drawing.Color.White;
@@ -661,7 +661,9 @@ namespace Agencia_de_Viajes
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tcPrecios);
             this.Controls.Add(this.tsMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrecios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrecios";
             this.Shown += new System.EventHandler(this.frmPrecios_Shown);
             this.tsMenu.ResumeLayout(false);
@@ -669,10 +671,8 @@ namespace Agencia_de_Viajes
             this.tcPrecios.ResumeLayout(false);
             this.tpDestinos.ResumeLayout(false);
             this.tpDestinos.PerformLayout();
-            this.tpActividades.ResumeLayout(false);
-            this.tpFechas.ResumeLayout(false);
-            this.grbDestinos.ResumeLayout(false);
-            this.grbDestinos.PerformLayout();
+            this.grbEstancia.ResumeLayout(false);
+            this.grbEstancia.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCincoEstrella)).EndInit();
@@ -680,10 +680,12 @@ namespace Agencia_de_Viajes
             ((System.ComponentModel.ISupportInitialize)(this.pcbTresEstrella)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbDosEstrella)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbUnaEstrella)).EndInit();
-            this.grbEstancia.ResumeLayout(false);
-            this.grbEstancia.PerformLayout();
+            this.grbDestinos.ResumeLayout(false);
+            this.grbDestinos.PerformLayout();
+            this.tpActividades.ResumeLayout(false);
             this.grbActividades.ResumeLayout(false);
             this.grbActividades.PerformLayout();
+            this.tpFechas.ResumeLayout(false);
             this.grbFechas.ResumeLayout(false);
             this.grbFechas.PerformLayout();
             this.ResumeLayout(false);
