@@ -117,7 +117,7 @@ namespace Agencia_de_Viajes
             this.tsbtnVolver.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnVolver.Name = "tsbtnVolver";
             this.tsbtnVolver.Size = new System.Drawing.Size(23, 22);
-            this.tsbtnVolver.Text = "toolStripButton1";
+            this.tsbtnVolver.Text = "Volver al principal";
             this.tsbtnVolver.Click += new System.EventHandler(this.tsbtnVolver_Click);
             // 
             // tcPrecios
@@ -686,7 +686,6 @@ namespace Agencia_de_Viajes
             this.Name = "frmPrecios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrecios";
-            this.Shown += new System.EventHandler(this.frmPrecios_Shown);
             this.tsMenu.ResumeLayout(false);
             this.tsMenu.PerformLayout();
             this.tcPrecios.ResumeLayout(false);

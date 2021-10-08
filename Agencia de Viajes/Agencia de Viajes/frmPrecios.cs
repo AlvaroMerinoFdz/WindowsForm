@@ -14,24 +14,12 @@ namespace Agencia_de_Viajes
         public int num;
 
 
+        private static frmPrecios tablaPrecios;
+
         public frmPrecios()
         {
             InitializeComponent();
-        }
 
-        /**
-         * Al pulsar esté botón volvemos al formulario principal. 
-         */
-        private void tsbtnVolver_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
-        /**
-         * Este método almacena los valores de los text box, al mostrarse el formulario precios.
-         */
-        private void frmPrecios_Shown(object sender, EventArgs e)
-        {
             //Almacenamos los valores de los destinos
             destinos[0] = int.Parse(txtCiudad.Text);
             destinos[1] = int.Parse(txtPlaya.Text);
@@ -65,8 +53,25 @@ namespace Agencia_de_Viajes
             fechas[0] = int.Parse(txtAlta.Text);
             fechas[1] = int.Parse(txtMediaTem.Text);
             fechas[2] = int.Parse(txtBaja.Text);
-
         }
+
+        public static frmPrecios singleton()
+        {
+            if(tablaPrecios == null)
+            {
+                tablaPrecios = new frmPrecios();
+            }
+            return tablaPrecios;
+        }
+
+        /**
+         * Al pulsar esté botón volvemos al formulario principal. 
+         */
+        private void tsbtnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
 
         /*
         private void numeroValido(int numero, TextBox txt)

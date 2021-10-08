@@ -5,7 +5,7 @@ namespace Agencia_de_Viajes
 {
     public partial class frmPrincipal : Form
     {
-        frmPrecios precios = new frmPrecios();
+        frmPrecios precios = frmPrecios.singleton();
         DateTime inicial;
         DateTime final;
         public frmPrincipal()
@@ -21,7 +21,7 @@ namespace Agencia_de_Viajes
 
         private void tmrHora_Tick(object sender, EventArgs e)
         {
-            lblHora.Text = DateTime.Now.ToString("hh:mm:ss");
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -36,6 +36,7 @@ namespace Agencia_de_Viajes
 
         private void preciosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            frmPrecios precios = frmPrecios.singleton();
             precios.ShowDialog();
         }
 
@@ -46,7 +47,6 @@ namespace Agencia_de_Viajes
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            btnValidar.Enabled = true;
             txtValidar.Text = "";
             tsBarraProgeso.Value = 0;
             if (lstbDestino.SelectedIndex < 0)
@@ -55,6 +55,7 @@ namespace Agencia_de_Viajes
             }
             else
             {
+                btnValidar.Enabled = true;
                 iniciarBarraProgeso();
                 mostrarPrecio();
                 lblPrecio.Text = calcularPrecio().ToString() + " €";
@@ -71,8 +72,39 @@ namespace Agencia_de_Viajes
             txtValidar.AppendText("Destino " + lstbDestino.SelectedItem.ToString() + " tiene un precio de: " + precios.destinos[lstbDestino.SelectedIndex] + " €\r\n");
             txtValidar.AppendText("Hotel de  " + nupdEstrellas.Value.ToString() + " estrellas,  tiene un precio de:  " + precioEstrellas() + " €\r\n");
             txtValidar.AppendText("Total de personas " + nupdPersonas.Value.ToString() + " tiene un precio de:  " + precioPersonas() + "€ \r\n");
-            txtValidar.AppendText("Tipo de estancia " + gpbEstancia.Text.ToString() + " tiene un precio de:  " + precioEstancia() + "€ \r\n");
+            txtValidar.AppendText("Tipo de estancia " + mostrarEstancia() + " tiene un precio de:  " + precioEstancia() + "€ \r\n"); ;
             txtValidar.AppendText("Total de días " + dias() + " tiene un precio de: " + precioDias() + "€ \r\n");
+            calcularActividades();
+        }
+
+        private string mostrarEstancia()
+        {
+            string estancia = "";
+            if (rdbDormir.Checked)
+            {
+                estancia = "Solo dormir";
+            }else if (rdbMedia.Checked)
+            {
+                estancia = "Media Pensión";
+            }
+            else
+            {
+                estancia = "Pensión Completa";
+            }
+            return estancia;
+        }
+
+        private void calcularActividades()
+        {
+            if (chlbActividades.CheckedIndices.Count >0)
+            {
+                for (int i = 0; i < chlbActividades.CheckedIndices.Count; i++)
+                {
+                    txtValidar.AppendText("Actividad " + chlbActividades.CheckedItems[i] + " tiene un precio de: " + precios.actividades[chlbActividades.CheckedIndices[i]] +"€ \r\n");
+
+                }
+            }
+
         }
 
         private int precioDias()
@@ -180,12 +212,14 @@ namespace Agencia_de_Viajes
         private void btnValidar_Click(object sender, EventArgs e)
         {
             tsBarraProgeso.Value = 100;
+            btnValidar.Enabled = false;
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
-            precios.Show();
-            precios.Hide();
+            
+            lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            lblDia.Text = DateTime.Now.ToString("dddd").ToString().ToUpper();
         }
     }
 }

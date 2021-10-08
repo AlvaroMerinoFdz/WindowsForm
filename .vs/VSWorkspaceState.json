@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Agencia de Viajes",
+    "\\Agencia de Viajes\\Agencia de Viajes"
   ],
-  "SelectedNode": "\\Agencia de Viajes.sln",
+  "SelectedNode": "\\Agencia de Viajes\\Agencia de Viajes\\frmPrecios.cs",
   "PreviewInSolutionExplorer": false
 }
