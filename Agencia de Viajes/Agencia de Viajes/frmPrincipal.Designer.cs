@@ -36,6 +36,8 @@ namespace Agencia_de_Viajes
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsBarraProgeso = new System.Windows.Forms.ToolStripProgressBar();
             this.lblHora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblDia = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.msMenu1 = new System.Windows.Forms.MenuStrip();
             this.acuerdoEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,7 +45,7 @@ namespace Agencia_de_Viajes
             this.pcbImagen = new System.Windows.Forms.PictureBox();
             this.lstbDestino = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.chlbActividades = new System.Windows.Forms.CheckedListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -86,7 +88,9 @@ namespace Agencia_de_Viajes
             this.stsBarraInferior.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.tsBarraProgeso,
-            this.lblHora});
+            this.lblHora,
+            this.lblDia,
+            this.lblFecha});
             this.stsBarraInferior.Location = new System.Drawing.Point(0, 629);
             this.stsBarraInferior.Name = "stsBarraInferior";
             this.stsBarraInferior.Size = new System.Drawing.Size(838, 22);
@@ -115,6 +119,21 @@ namespace Agencia_de_Viajes
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(49, 17);
             this.lblHora.Text = "Hora";
+            // 
+            // lblDia
+            // 
+            this.lblDia.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblDia.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblDia.Name = "lblDia";
+            this.lblDia.Size = new System.Drawing.Size(24, 17);
+            this.lblDia.Text = "Dia";
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(38, 17);
+            this.lblFecha.Text = "Fecha";
             // 
             // msMenu1
             // 
@@ -185,20 +204,20 @@ namespace Agencia_de_Viajes
             this.label1.TabIndex = 5;
             this.label1.Text = "Elige un destino: ";
             // 
-            // checkedListBox1
+            // chlbActividades
             // 
-            this.checkedListBox1.CheckOnClick = true;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.chlbActividades.CheckOnClick = true;
+            this.chlbActividades.FormattingEnabled = true;
+            this.chlbActividades.Items.AddRange(new object[] {
             "Cena y Espectáculo",
             "Excursiones",
             "Lavandería",
             "NaturAventura",
             "Spa"});
-            this.checkedListBox1.Location = new System.Drawing.Point(563, 77);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(202, 94);
-            this.checkedListBox1.TabIndex = 6;
+            this.chlbActividades.Location = new System.Drawing.Point(563, 77);
+            this.chlbActividades.Name = "chlbActividades";
+            this.chlbActividades.Size = new System.Drawing.Size(202, 94);
+            this.chlbActividades.TabIndex = 6;
             // 
             // label2
             // 
@@ -455,7 +474,7 @@ namespace Agencia_de_Viajes
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.chlbActividades);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lstbDestino);
             this.Controls.Add(this.pcbImagen);
@@ -499,7 +518,7 @@ namespace Agencia_de_Viajes
         private System.Windows.Forms.PictureBox pcbImagen;
         private System.Windows.Forms.ListBox lstbDestino;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox chlbActividades;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -522,5 +541,7 @@ namespace Agencia_de_Viajes
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.Timer tmrBarra;
+        private System.Windows.Forms.ToolStripStatusLabel lblFecha;
+        private System.Windows.Forms.ToolStripStatusLabel lblDia;
     }
 }

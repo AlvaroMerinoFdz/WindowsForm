@@ -87,7 +87,7 @@ namespace Agencia_de_Viajes
             this.tsbtnVolver.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtnVolver.Name = "tsbtnVolver";
             this.tsbtnVolver.Size = new System.Drawing.Size(23, 22);
-            this.tsbtnVolver.Text = "toolStripButton1";
+            this.tsbtnVolver.Text = "Volver al principal";
             this.tsbtnVolver.Click += new System.EventHandler(this.tsbtnVolver_Click);
             // 
             // frmAcuerdo
