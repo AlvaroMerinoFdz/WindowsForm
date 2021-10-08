@@ -1,0 +1,10 @@
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\bin\Debug\ValidacionDatos.exe.config
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\bin\Debug\ValidacionDatos.exe
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\bin\Debug\ValidacionDatos.pdb
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.csproj.AssemblyReference.cache
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.frmDatosPersonales.resources
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.Properties.Resources.resources
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.csproj.GenerateResource.cache
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.csproj.CoreCompileInputs.cache
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.exe
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.pdb
