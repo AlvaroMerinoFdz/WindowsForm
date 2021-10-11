@@ -8,3 +8,4 @@ C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\V
 C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.csproj.CoreCompileInputs.cache
 C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.exe
 C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.pdb
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.frmDatosArchivados.resources

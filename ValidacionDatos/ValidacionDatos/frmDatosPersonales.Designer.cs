@@ -29,6 +29,7 @@ namespace ValidacionDatos
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDatosPersonales));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,6 +48,8 @@ namespace ValidacionDatos
             this.mktxtMovil = new System.Windows.Forms.MaskedTextBox();
             this.mktxtMatricula = new System.Windows.Forms.MaskedTextBox();
             this.mktxtCuenta = new System.Windows.Forms.MaskedTextBox();
+            this.errError = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errError)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -143,7 +146,7 @@ namespace ValidacionDatos
             // mktxtDni
             // 
             this.mktxtDni.Location = new System.Drawing.Point(398, 186);
-            this.mktxtDni.Mask = "00000000-L";
+            this.mktxtDni.Mask = "00000000L";
             this.mktxtDni.Name = "mktxtDni";
             this.mktxtDni.Size = new System.Drawing.Size(100, 20);
             this.mktxtDni.TabIndex = 10;
@@ -158,6 +161,7 @@ namespace ValidacionDatos
             this.btnArchivar.TabIndex = 11;
             this.btnArchivar.Text = "Archivar";
             this.btnArchivar.UseVisualStyleBackColor = true;
+            this.btnArchivar.Click += new System.EventHandler(this.btnArchivar_Click);
             // 
             // btnValidar
             // 
@@ -168,6 +172,7 @@ namespace ValidacionDatos
             this.btnValidar.TabIndex = 12;
             this.btnValidar.Text = "Validar";
             this.btnValidar.UseVisualStyleBackColor = true;
+            this.btnValidar.Click += new System.EventHandler(this.btnValidar_Click);
             // 
             // btnDatos
             // 
@@ -178,6 +183,7 @@ namespace ValidacionDatos
             this.btnDatos.TabIndex = 13;
             this.btnDatos.Text = "Ver Datos Archivados";
             this.btnDatos.UseVisualStyleBackColor = true;
+            this.btnDatos.Click += new System.EventHandler(this.btnDatos_Click);
             // 
             // mktxtMovil
             // 
@@ -191,7 +197,7 @@ namespace ValidacionDatos
             // mktxtMatricula
             // 
             this.mktxtMatricula.Location = new System.Drawing.Point(159, 187);
-            this.mktxtMatricula.Mask = "0000-LLL";
+            this.mktxtMatricula.Mask = "0000->LLL";
             this.mktxtMatricula.Name = "mktxtMatricula";
             this.mktxtMatricula.Size = new System.Drawing.Size(107, 20);
             this.mktxtMatricula.TabIndex = 15;
@@ -203,6 +209,10 @@ namespace ValidacionDatos
             this.mktxtCuenta.Name = "mktxtCuenta";
             this.mktxtCuenta.Size = new System.Drawing.Size(339, 20);
             this.mktxtCuenta.TabIndex = 16;
+            // 
+            // errError
+            // 
+            this.errError.ContainerControl = this;
             // 
             // frmDatosPersonales
             // 
@@ -231,6 +241,7 @@ namespace ValidacionDatos
             this.Name = "frmDatosPersonales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos Personales";
+            ((System.ComponentModel.ISupportInitialize)(this.errError)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,6 +266,7 @@ namespace ValidacionDatos
         private System.Windows.Forms.MaskedTextBox mktxtMovil;
         private System.Windows.Forms.MaskedTextBox mktxtMatricula;
         private System.Windows.Forms.MaskedTextBox mktxtCuenta;
+        private System.Windows.Forms.ErrorProvider errError;
     }
 }
 
