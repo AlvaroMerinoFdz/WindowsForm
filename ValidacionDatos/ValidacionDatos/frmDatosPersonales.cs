@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IbanNet;
+using System;
 using System.IO;
 using System.Windows.Forms;
 using ValidacionDatos.Errores;
@@ -142,9 +143,10 @@ namespace ValidacionDatos
         //Devuelve true si el IBAN es correcto.
         public bool isIBAN(string iban)
         {
-            bool comprobar = true;
-
-            return comprobar;
+            return true;
+            /*IIbanValidator validator = new IbanValidator();
+            ValidationResult validationResult = validator.Validate(iban);
+            if (validationResult.IsValid) return true; else return false;*/
         }
 
         private void btnArchivar_Click(object sender, EventArgs e)
@@ -190,10 +192,10 @@ namespace ValidacionDatos
         //Método que usamos para abrir un fichero y mostrar su contenido en otro formulario.
         public void abrir(string fichero)
         {
-            StreamReader texto = new StreamReader(fichero);
-            frmDatosArchivados ventana = new frmDatosArchivados(texto.ReadToEnd());
+            StreamReader leer = new StreamReader(fichero);
+            frmDatosArchivados ventana = new frmDatosArchivados(leer.ReadToEnd());
             ventana.ShowDialog();
-            texto.Close();
+            leer.Close();
         }
     }
 }

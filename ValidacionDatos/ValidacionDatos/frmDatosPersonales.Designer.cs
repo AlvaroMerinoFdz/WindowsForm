@@ -205,7 +205,7 @@ namespace ValidacionDatos
             // mktxtCuenta
             // 
             this.mktxtCuenta.Location = new System.Drawing.Point(159, 241);
-            this.mktxtCuenta.Mask = "ES00-0000-0000-00-00000000";
+            this.mktxtCuenta.Mask = "ES00-0000-0000-00-0000000000";
             this.mktxtCuenta.Name = "mktxtCuenta";
             this.mktxtCuenta.Size = new System.Drawing.Size(339, 20);
             this.mktxtCuenta.TabIndex = 16;

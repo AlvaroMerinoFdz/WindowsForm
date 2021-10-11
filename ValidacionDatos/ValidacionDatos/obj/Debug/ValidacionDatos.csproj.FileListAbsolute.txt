@@ -9,3 +9,6 @@ C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\V
 C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.exe
 C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.pdb
 C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.frmDatosArchivados.resources
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\bin\Debug\IbanNet.dll
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\bin\Debug\IbanNet.xml
+C:\Users\alvar\Documents\WindowsForm\ValidacionDatos\ValidacionDatos\obj\Debug\ValidacionDatos.csproj.CopyComplete
