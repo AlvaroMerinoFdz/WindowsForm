@@ -1,0 +1,10 @@
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\bin\Debug\LecturaXML.exe.config
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\bin\Debug\LecturaXML.exe
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\bin\Debug\LecturaXML.pdb
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.csproj.AssemblyReference.cache
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.FrmLecturaXML.resources
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.Properties.Resources.resources
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.csproj.GenerateResource.cache
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.csproj.CoreCompileInputs.cache
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.exe
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.pdb
