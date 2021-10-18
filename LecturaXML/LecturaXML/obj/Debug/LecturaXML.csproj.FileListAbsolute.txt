@@ -8,3 +8,4 @@ C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.
 C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.csproj.CoreCompileInputs.cache
 C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.exe
 C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.pdb
+C:\Users\alvar\Documents\WindowsForm\LecturaXML\LecturaXML\obj\Debug\LecturaXML.frmTelefonos.resources
