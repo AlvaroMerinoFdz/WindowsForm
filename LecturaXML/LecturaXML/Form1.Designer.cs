@@ -39,6 +39,7 @@ namespace LecturaXML
             this.rtbEsquema = new System.Windows.Forms.RichTextBox();
             this.abrir = new System.Windows.Forms.OpenFileDialog();
             this.dsDatos = new System.Data.DataSet();
+            this.sfdGuardar = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsDatos)).BeginInit();
             this.SuspendLayout();
@@ -172,6 +173,7 @@ namespace LecturaXML
         private System.Windows.Forms.RichTextBox rtbEsquema;
         private System.Windows.Forms.OpenFileDialog abrir;
         private System.Data.DataSet dsDatos;
+        private System.Windows.Forms.SaveFileDialog sfdGuardar;
     }
 }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
 using System.Xml;
 
@@ -9,6 +10,7 @@ namespace LecturaXML
     public partial class FrmLecturaXML : Form
     {
         string ruta;
+        
         public FrmLecturaXML()
         {
             InitializeComponent();
@@ -16,6 +18,7 @@ namespace LecturaXML
 
         private void btnLeerXML_Click(object sender, EventArgs e)
         {
+
             if (abrir.ShowDialog() == DialogResult.OK)
             {
                 btnFicheroGenerado.Enabled = true;
@@ -80,7 +83,8 @@ namespace LecturaXML
 
             //Para crear un hijo, se crea, se le ponen los atributos ( si tiene)
             XmlElement xHijo = xDoc.CreateElement(string.Empty, "hijo", string.Empty);
-            elementoRaiz.AppendChild(xHijo);
+            xHijo.SetAttribute("id", "el_valor_que_yo_quiera");
+            
 
             //Creamos las 2 hijas
             XmlElement xUna = xDoc.CreateElement(string.Empty, "una", string.Empty);
@@ -94,6 +98,15 @@ namespace LecturaXML
             XmlText xTxotra = xDoc.CreateTextNode("otro_valor");
             otra.AppendChild(xTxotra);
             xHijo.AppendChild(otra);
+
+            //por ultimo metemos a xHijo como hijo de elementoRaiz
+            elementoRaiz.AppendChild(xHijo);
+
+            //Ahora vamos a guardar el documento con formato correcto
+            XmlTextWriter xtw = new XmlTextWriter("prueba.xml", Encoding.UTF8);
+            xtw.Formatting = Formatting.Indented;
+            xDoc.Save(xtw);
+            xtw.Close();
         }
     }
 }
